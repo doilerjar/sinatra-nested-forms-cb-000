@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First View!!</title>
+</head>
+<body>
+  <h1>Welcome to the Nested Forms Lab!</h1>
+  <form action="/show" method="post">
+    <label for="pirate_name">Pirate Name</label>
+    <input type="text" name="pirate[name]">
+    <label for="pirate_weight">Pirate Weight</label>
+    <input type="text" name="pirate[name][][weight]">
+    <label for="pirate_height">Pirate Height</label>
+    <input type="text" name="pirate[name][][height]">
+    
+    <label for="ship1_name">Ship1 Name</label>
+    <input type="text" name="ship[name]">
+    <label for="ship1_type">Ship1 Type</label>
+    <input type="text" name="ship[name][][type]">
+    <label for="ship1_booty">Ship1 Booty</label>
+    <input type="text" name="ship[name][][booty]">
+    
+    <label for="ship2_name">Ship2 Name</label>
+    <input type="text" name="ship[name]">
+    <label for="ship2_type">Ship2 Type</label>
+    <input type="text" name="ship[name][][type]">
+    <label for="ship2_booty">Ship2 Booty</label>
+    <input type="text" name="ship[name][][booty]">
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
